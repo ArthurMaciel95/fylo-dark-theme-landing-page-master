@@ -1,0 +1,14 @@
+
+@import "_variables";
+@import '_navbar';
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+}
+
+body{
+    font-size: 14px;
+    font-family: $font-Open-Sans;
+    background-color: $dark-blue-background;
+}
