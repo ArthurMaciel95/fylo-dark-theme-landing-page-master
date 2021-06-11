@@ -1,0 +1,33 @@
+
+nav{
+    display: flex;
+    width: 90vw;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    .logo{
+      
+    }
+    .menu{
+        
+        display: flex;
+        justify-content: center;
+
+        li{
+            list-style: none;
+            a{
+                color: rgb(216, 216, 216);
+                padding: 20px;
+                
+                text-decoration: none;
+                &:hover{
+                    color: $White;
+                    text-decoration: underline;
+                }
+            }
+
+        }
+    }
+}
+

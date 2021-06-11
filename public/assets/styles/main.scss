@@ -1,6 +1,7 @@
 
 @import "_variables";
 @import '_navbar';
+@import '_hero';
 *{
     padding:0px;
     margin:0px;
@@ -11,4 +12,8 @@ body{
     font-size: 14px;
     font-family: $font-Open-Sans;
     background-color: $dark-blue-background;
+}
+
+.container{
+    font-family: $font-Raleway;
 }

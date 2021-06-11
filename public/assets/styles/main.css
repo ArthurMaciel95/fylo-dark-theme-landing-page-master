@@ -1,3 +1,88 @@
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90vw;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav .menu li {
+  list-style: none;
+}
+
+nav .menu li a {
+  color: #d8d8d8;
+  padding: 20px;
+  text-decoration: none;
+}
+
+nav .menu li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.illustration-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50vw;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.illustration-area img {
+  width: 38vw;
+  margin-bottom: 15px;
+}
+
+.illustration-area h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.illustration-area p {
+  color: #a7a7a7;
+  text-align: center;
+}
+
+.illustration-area .btn-hero {
+  margin-top: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
+  background: linear-gradient(to right, #65e2d9, #339ecc);
+  color: white;
+  border-radius: 25px;
+  padding: 15px 60px;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -9,5 +94,9 @@ body {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   background-color: #1c2431;
+}
+
+.container {
+  font-family: "Raleway", sans-serif;
 }
 /*# sourceMappingURL=main.css.map */
