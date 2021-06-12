@@ -2,6 +2,7 @@
 @import "_variables";
 @import '_navbar';
 @import '_hero';
+@import '_cards-area';
 *{
     padding:0px;
     margin:0px;
@@ -14,6 +15,3 @@ body{
     background-color: $dark-blue-background;
 }
 
-.container{
-    font-family: $font-Raleway;
-}

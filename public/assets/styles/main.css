@@ -1,19 +1,24 @@
-nav {
+header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90vw;
+  width: 80vw;
+  max-width: 1440px;
   margin: 0 auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px;
+  padding: 20px 0px 0px 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-nav .menu {
+header nav .logo img {
+  height: 2.5rem;
+}
+
+header nav .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,22 +27,23 @@ nav .menu {
           justify-content: center;
 }
 
-nav .menu li {
+header nav .menu li {
   list-style: none;
 }
 
-nav .menu li a {
-  color: #d8d8d8;
+header nav .menu li a {
+  color: #bbbbbb;
   padding: 20px;
+  font-size: 0.8rem;
   text-decoration: none;
 }
 
-nav .menu li a:hover {
+header nav .menu li a:hover {
   color: white;
   text-decoration: underline;
 }
 
-.illustration-area {
+.container .illustration-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,7 +53,7 @@ nav .menu li a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50vw;
+  width: 70vw;
   margin: 0 auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -55,32 +61,109 @@ nav .menu li a:hover {
           flex-direction: column;
 }
 
-.illustration-area img {
-  width: 38vw;
+.container {
+  font-family: "Raleway", sans-serif;
+}
+
+.container object {
+  position: absolute;
+  bottom: -80px;
+  z-index: -1;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container .illustration-area {
+  position: relative;
+}
+
+.container .illustration-area img {
+  width: 30vw;
   margin-bottom: 15px;
 }
 
-.illustration-area h1 {
+.container .illustration-area h1 {
   font-size: 2rem;
   text-align: center;
   color: white;
   margin-bottom: 5px;
+  max-width: 650px;
+  line-height: 2.8rem;
 }
 
-.illustration-area p {
-  color: #a7a7a7;
+.container .illustration-area p {
+  max-width: 450px;
+  color: #bbbbbb;
   text-align: center;
+  line-height: 1.4rem;
 }
 
-.illustration-area .btn-hero {
+.container .illustration-area .btn-hero {
   margin-top: 10px;
   background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
   background: linear-gradient(to right, #65e2d9, #339ecc);
   color: white;
   border-radius: 25px;
-  padding: 15px 60px;
+  padding: 15px 80px;
   text-decoration: none;
   font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.cards-container-area {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  height: 80vh;
+  margin-top: 5rem;
+  background-color: #181f2a;
+}
+
+.cards-container-area .card-area-center {
+  max-width: 1440px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  width: 80vw;
+  margin: 0 auto;
+  place-items: center;
+  gap: 1.5rem;
+}
+
+.cards-container-area .card-area-center .card {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+.cards-container-area .card-area-center .card object {
+  margin-bottom: 20px;
+}
+
+.cards-container-area .card-area-center .card h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.cards-container-area .card-area-center .card p {
+  font-size: 0.8rem;
+  color: #bbbbbb;
+  font-weight: 400;
 }
 
 * {
@@ -94,9 +177,5 @@ body {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   background-color: #1c2431;
-}
-
-.container {
-  font-family: "Raleway", sans-serif;
 }
 /*# sourceMappingURL=main.css.map */
