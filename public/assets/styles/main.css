@@ -116,7 +116,7 @@ header nav .menu li a:hover {
   display: -ms-flexbox;
   display: flex;
   justify-items: center;
-  height: 80vh;
+  height: 100vh;
   margin-top: 5rem;
   background-color: #181f2a;
 }
@@ -164,6 +164,98 @@ header nav .menu li a:hover {
   font-size: 0.8rem;
   color: #bbbbbb;
   font-weight: 400;
+}
+
+.stay-productive-area {
+  max-width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  height: 100vh;
+  background-color: #181f2a;
+}
+
+.stay-productive-area .image-productive-area img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.stay-productive-area .text-productive .box-text {
+  margin-left: 50px;
+  width: 23rem;
+}
+
+.stay-productive-area .text-productive .box-text h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  margin: 20px 0px;
+  color: white;
+  line-height: 2.8rem;
+}
+
+.stay-productive-area .text-productive .box-text article p.paragraph-order {
+  color: #bbbbbb;
+  margin-bottom: 20px;
+}
+
+.stay-productive-area .text-productive .box-text a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4px 0px;
+  text-decoration: none;
+  border-bottom: 1px solid #65e2d9;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stay-productive-area .text-productive .box-text a p {
+  color: #65e2d9;
+}
+
+.stay-productive-area .text-productive .box-text a span {
+  margin-left: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #181f2a;
+  background-color: #65e2d9;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.stay-productive-area .text-productive .box-text a:hover > span {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
 * {
