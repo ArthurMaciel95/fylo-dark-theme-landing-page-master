@@ -15,11 +15,16 @@ footer{
             max-width: 300px;
             display: flex;
             flex-direction: column;
-            padding: 20px;
+            padding: 5px;
             
             li{
+                
                 a{
                     color: $White;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
                 }
             }
         }
@@ -29,11 +34,26 @@ footer{
 
 @media screen and (max-width:600px){
     footer{
+        padding: 100px 0px;
         height: auto;
         display: flex;
         flex-direction: column;
         .footer-column-area{
             flex-direction: column;
+            align-items: flex-start;
+
+            .column-footer{
+                margin: 20px 0px;
+                li{
+                    
+                    a{
+                        padding: 10px 0px;
+                        display: flex;
+                    }
+                    
+                    
+                }
+            }
         }
     }
 }

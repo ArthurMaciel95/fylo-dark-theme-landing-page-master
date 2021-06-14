@@ -44,9 +44,29 @@ header nav .menu li a:hover {
 }
 
 @media screen and (max-width: 600px) {
+  header nav .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header nav .logo img {
+    height: 2rem;
+  }
   header nav .menu li a {
     padding: 5px;
   }
+}
+
+.container {
+  font-family: "Raleway", sans-serif;
+}
+
+.container object {
+  position: absolute;
+  bottom: -80px;
+  z-index: -1;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .container .illustration-area {
@@ -65,21 +85,6 @@ header nav .menu li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.container {
-  font-family: "Raleway", sans-serif;
-}
-
-.container object {
-  position: absolute;
-  bottom: -80px;
-  z-index: -1;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.container .illustration-area {
   position: relative;
 }
 
@@ -114,6 +119,15 @@ header nav .menu li a:hover {
   text-decoration: none;
   font-size: 0.8rem;
   font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+  .container .illustration-area img {
+    width: 19rem;
+  }
+  .container .illustration-area h1 {
+    font-size: 2rem;
+  }
 }
 
 .cards-container-area {
@@ -406,15 +420,21 @@ footer .footer-column-area .column-footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 20px;
+  padding: 5px;
 }
 
 footer .footer-column-area .column-footer li a {
   color: white;
+  text-decoration: none;
+}
+
+footer .footer-column-area .column-footer li a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 600px) {
   footer {
+    padding: 100px 0px;
     height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -429,6 +449,18 @@ footer .footer-column-area .column-footer li a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  footer .footer-column-area .column-footer {
+    margin: 20px 0px;
+  }
+  footer .footer-column-area .column-footer li a {
+    padding: 10px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 

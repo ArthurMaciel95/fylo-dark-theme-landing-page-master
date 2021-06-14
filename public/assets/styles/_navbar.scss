@@ -42,8 +42,9 @@ nav{
         nav{
            
             .logo{
+                display: flex;
                 img{
-
+                    height: 2rem;
                 }
             }
             .menu{
