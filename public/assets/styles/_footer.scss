@@ -1,0 +1,39 @@
+footer{
+    display: flex;
+    background: $dark-blue-footer;
+    color: white;
+    height: 60vh;
+    align-items: center;
+    flex-direction: column;
+    .footer-column-area{
+        align-items: center;
+        height: 100%;
+        display: flex;
+        width: 80vw;
+
+        .column-footer{
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            
+            li{
+                a{
+                    color: $White;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:600px){
+    footer{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        .footer-column-area{
+            flex-direction: column;
+        }
+    }
+}

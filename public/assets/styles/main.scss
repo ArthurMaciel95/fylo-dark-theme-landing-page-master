@@ -4,6 +4,8 @@
 @import '_hero';
 @import '_cards-area';
 @import '_stay-productive';
+@import '_comments-card';
+@import '_footer';
 *{
     padding:0px;
     margin:0px;
@@ -14,5 +16,9 @@ body{
     font-size: 14px;
     font-family: $font-Open-Sans;
     background-color: $dark-blue-background;
+}
+
+li{
+    list-style-type: none;
 }
 

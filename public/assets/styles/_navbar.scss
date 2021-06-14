@@ -6,7 +6,7 @@ nav{
     max-width: 1440px;
     margin: 0 auto;
     justify-content: space-between;
-    padding: 20px 0px 0px 20px;
+    padding: 20px 0px 20px 0px;
     align-items: center;
     .logo{
       img{
@@ -34,5 +34,26 @@ nav{
         }
     }
 }
+}
+
+
+@media screen and (max-width:600px){
+    header{
+        nav{
+           
+            .logo{
+                img{
+
+                }
+            }
+            .menu{
+                li{
+                    a{
+                        padding: 5px;
+                    }
+                }
+            }
+        }
+    }
 }
 

@@ -1,6 +1,8 @@
 .stay-productive-area{
     max-width: 1440px;
+    
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -10,11 +12,12 @@
     .image-productive-area{
         img{
             object-fit: cover;
+            width: 100%;
         }
     }
     .text-productive{
         .box-text{
-            margin-left: 50px;
+            margin-left: 40px;
             width: 23rem;
             h1{
                 font-family: $font-Raleway;
@@ -66,4 +69,23 @@
         }
        
     }
+}
+
+
+@media screen and(max-width:600px){
+    .stay-productive-area{
+        height: auto;
+        padding: 80px 0px;
+        .image-productive-area{
+            width: 80vw;
+        }
+        .text-productive{
+            .box-text{
+                margin-left: 0px;
+                width: 80vw;
+            }
+        }
+    }
+
+
 }

@@ -1,0 +1,55 @@
+.comments-cards-area{
+    justify-content: center;
+    background-color: $dark-blue-main;
+    display: flex;
+    color: $White;
+    flex-wrap: wrap;
+    
+    
+    .comment-card{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+       z-index: 10;
+        background: $dark-blue-testimonials;
+        padding: 20px;
+        margin: 10px;
+        min-width: 290px;
+        max-width: 340px;
+        max-height: 190px;
+
+        .bg-quotes{
+            z-index: 5;
+            position: absolute;
+            top: -30px;
+            left: -10px;
+        }
+
+        article{
+            margin: 10px 0px;
+        }
+        .author-comment{
+            display: flex;
+            margin-top: 10px;
+            
+            align-items: center;
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }   
+            .author-and-ocupation{
+                display: flex;
+                flex-direction: column;
+                .author{
+                    color: white;
+                    font-weight: 700;
+                }
+                .ocupation{
+                    color: $gray;
+                }
+            }
+        }
+   }
+}

@@ -21,7 +21,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 50%;
+            max-width: 300px;
+            
             object{
              margin-bottom: 20px;
             }
@@ -38,3 +39,16 @@
     }
 }
 
+
+@media (max-width:600px){
+    .cards-container-area{
+        height: auto;
+        padding: 50px 0px;
+        .card-area-center{
+            
+       
+                grid-template-columns: none;
+            
+        }
+    }
+}
