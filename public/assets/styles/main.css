@@ -59,16 +59,21 @@ header nav .menu li a:hover {
 
 .container {
   font-family: "Raleway", sans-serif;
+  position: relative;
 }
 
-.container object {
+.container .svg-curve-background {
   position: absolute;
   bottom: 0;
   z-index: -1;
   width: 100%;
   margin: 0 auto;
-  left: -50%;
-  right: -50%;
+}
+
+.container .svg-curve-mobile {
+  display: none;
+  z-index: -1;
+  position: absolute;
 }
 
 .container .illustration-area {
@@ -124,11 +129,24 @@ header nav .menu li a:hover {
 }
 
 @media screen and (max-width: 600px) {
+  .container .svg-curve-background {
+    display: none;
+  }
+  .container .svg-curve-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 360px;
+    bottom: 0;
+  }
   .container .illustration-area img {
     width: 19rem;
   }
   .container .illustration-area h1 {
     font-size: 2rem;
+  }
+  .container .illustration-area .svg-curve-background {
+    display: none;
   }
 }
 
@@ -308,6 +326,7 @@ header nav .menu li a:hover {
 }
 
 .comments-cards-area {
+  max-width: 1440px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -471,6 +490,7 @@ footer .form-footer .input-area button {
 }
 
 footer .footer-column-area {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -491,6 +511,14 @@ footer .footer-column-area .column-footer {
           flex-direction: column;
 }
 
+footer .footer-column-area .column-footer li {
+  padding: 10px;
+}
+
+footer .footer-column-area .column-footer li object {
+  margin-right: 10px;
+}
+
 footer .footer-column-area .column-footer li:nth-child(2) {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -501,11 +529,13 @@ footer .footer-column-area .column-footer li:nth-child(2) .locate-icon {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  margin-right: 10px;
 }
 
 footer .footer-column-area .column-footer li a {
   color: #bbbbbb;
   text-decoration: none;
+  padding: 10px;
 }
 
 footer .footer-column-area .column-footer li a:hover {
@@ -515,7 +545,8 @@ footer .footer-column-area .column-footer li a:hover {
 
 @media screen and (max-width: 600px) {
   footer {
-    padding: 100px 0px;
+    max-width: 1440px;
+    padding: 200px 0px;
     height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -527,6 +558,12 @@ footer .footer-column-area .column-footer li a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  footer .form-footer {
+    top: -10%;
+  }
+  footer .form-footer .input-area input[type="email"] {
+    margin-bottom: 10px;
   }
   footer .footer-column-area {
     -webkit-box-orient: vertical;

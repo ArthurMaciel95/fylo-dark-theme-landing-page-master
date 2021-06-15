@@ -1,15 +1,20 @@
 
 .container{
     font-family: $font-Raleway;
+    position: relative;
 
-    object{
+    .svg-curve-background{
         position: absolute;
        bottom: 0;
         z-index: -1;
         width: 100%;
         margin: 0 auto;
-       left: -50%;
-       right: -50%;
+      
+    }
+    .svg-curve-mobile{
+        display: none;
+        z-index: -1;
+        position: absolute;
     }
     .illustration-area{
         display: flex;
@@ -54,12 +59,24 @@
 
 @media screen and (max-width:600px){
     .container{
+        .svg-curve-background{
+            display: none;
+        }
+        .svg-curve-mobile{
+            display: flex;
+            min-width: 360px;
+            bottom: 0;
+
+        }
         .illustration-area{
             img{
                 width: 19rem;
             }
             h1{
                 font-size: 2rem;
+            }
+            .svg-curve-background{
+                display: none;
             }
         }
     }

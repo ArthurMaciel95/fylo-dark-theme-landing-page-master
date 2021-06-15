@@ -64,7 +64,7 @@ footer{
     }
     .footer-column-area{
         
-        
+        margin: 0 auto;
         display: flex;
         width: 80vw;
         justify-content: space-around;
@@ -74,19 +74,25 @@ footer{
             display: flex;
             flex-direction: column;
            
-            
+           
             li{
-                
-
+                padding: 10px;
+                object{
+                    margin-right: 10px;
+                }
                 &:nth-child(2){
                     display: flex;
                     .locate-icon{
                         height: fit-content;
+                        margin-right: 10px;
+                        
                     }
                 }
+                
                 a{
                     color: $gray;
                     text-decoration: none;
+                    padding: 10px;
                     &:hover{
                         text-decoration: underline;
                         color: $White;
@@ -99,12 +105,23 @@ footer{
 
 
 @media screen and (max-width:600px){
+   
     footer{
-        padding: 100px 0px;
+        max-width: 1440px;
+        padding: 200px 0px;
         height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
+        .form-footer{
+            top: -10%;
+
+            .input-area{
+                input[type="email"]{
+                    margin-bottom: 10px;
+                }
+            }
+        }
         .footer-column-area{
             flex-direction: column;
             align-items: flex-start;
