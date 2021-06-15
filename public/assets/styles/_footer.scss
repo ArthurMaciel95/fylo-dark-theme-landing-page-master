@@ -1,29 +1,95 @@
 footer{
+    position: relative;
     display: flex;
     background: $dark-blue-footer;
     color: white;
-    height: 60vh;
-    align-items: center;
+    height: 70vh;
+    justify-content: center;
+  
+    
     flex-direction: column;
+
+    .form-footer{
+        position: absolute;
+        top: -25%;
+        left: -50%;
+        right: -50%;
+        margin: 0 auto;
+        height: auto;
+        background-color: $dark-blue-background;
+        padding: 30px 50px;
+        font-family: $font-Raleway;
+        text-align: center;
+        max-width: 60vw;
+        min-width: 340px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 6px rgba($color: #000000, $alpha: 0.2);
+        h1{
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        p{
+            margin-bottom: 10px;
+            color: $gray;
+        }
+        .input-area{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            input[type=email]{
+                background-color: $White;
+                border-radius: 25px;
+                padding: 15px 20px;
+                border: none;
+                height: fit-content;
+               
+                margin-right: 10px;
+               
+            }
+            button{
+                height: fit-content;
+           
+            background: linear-gradient(to right,$Cyan-gradient,$Blue-gradient);
+            color: white;
+            border-radius: 25px;
+            padding: 15px 50px;
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            }
+        }
+    }
     .footer-column-area{
-        align-items: center;
-        height: 100%;
+        
+        
         display: flex;
         width: 80vw;
-
+        justify-content: space-around;
+        padding: 50px 0px 0px 0px;
         .column-footer{
             max-width: 300px;
             display: flex;
             flex-direction: column;
-            padding: 5px;
+           
             
             li{
                 
+
+                &:nth-child(2){
+                    display: flex;
+                    .locate-icon{
+                        height: fit-content;
+                    }
+                }
                 a{
-                    color: $White;
+                    color: $gray;
                     text-decoration: none;
                     &:hover{
                         text-decoration: underline;
+                        color: $White;
                     }
                 }
             }
@@ -38,6 +104,7 @@ footer{
         height: auto;
         display: flex;
         flex-direction: column;
+        align-items: center;
         .footer-column-area{
             flex-direction: column;
             align-items: flex-start;

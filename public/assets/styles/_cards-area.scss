@@ -5,12 +5,12 @@
     display: flex;
     justify-items: center;
     height: 100vh;
-    margin-top: 5rem;
+    
     background-color: $dark-blue-main;
     .card-area-center{
         max-width: 1440px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(320px, 1fr));
         width: 80vw;
         margin: 0 auto;
         place-items: center;

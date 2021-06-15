@@ -4,7 +4,7 @@
     display: flex;
     color: $White;
     flex-wrap: wrap;
-    
+    padding: 80px 0px 150px 0px;
     
     .comment-card{
         position: relative;
@@ -17,6 +17,7 @@
         min-width: 290px;
         max-width: 340px;
         max-height: 190px;
+        border-radius: 5px;
 
         .bg-quotes{
             z-index: 5;
